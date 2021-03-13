@@ -7,12 +7,16 @@ const length = students.length;
 
 console.log("Number of students", length);
 
-// for loop
-for (let i = 0; i < length; i++) {
-  //store current student
+let i = 0;
+
+//while loop
+while (i < length) {
+  //get current student
   const currentStudent = students[i];
-  //construct message and store
-  const message = `Great to see you, ${currentStudent}!`;
-  // console log message
+  //construct message
+  const message = `Great to see you ${}`;
+  //log message
   console.log(message);
+
+  i = i + 1;
 }
